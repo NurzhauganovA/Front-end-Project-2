@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html{
+	color:#000;
+	background:#FFF;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3,
+h4, h5, h6, pre, code, form, fieldset, legend, input,
+textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+fieldset, img {
+	border:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+ol, ul {
+	list-style:none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+caption, th {
+	text-align:left;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+h1, h2, h3, h4, h5, h6 {
+
+	font-size:100%;
+	font-weight:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+q:before, q:after {
+	content:'';
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+abbr, acronym {
+	border:0;
+	font-variant:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+sup {
+	vertical-align:text-top;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+sub {
+	vertical-align:text-bottom;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+legend {
+	color:#000;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+body {
+	font-family: 'Poppins', sans-serif;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navbar {
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.navbar-container {
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	height: 100%;
+	color: rgb(255, 255, 255);
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.logo-container {
+	flex: 2;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.logo-container a {
+	color: #FFF;
+	text-decoration: none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.logo {
+	font-size: 30px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.menu-container {
+	flex: 6;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.menu-list {
+	display: flex;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.menu-list a {
+	color: #FFF;
+	text-decoration: none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.menu-list-item {
+	margin-left: 30px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-container {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-picture {
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-icon img {
+	cursor: pointer;
+	width: 15%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-text-container {
+	margin: 0 20px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.toggle {
+	width: 40px;
+	height: 20px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 30px;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	cursor: pointer;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.toggle-ball {
+	margin-top: 1px;
+	border-radius: 50%;
+	background-color: #000;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 1px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.container {
+	background-color: #151515;
+	min-height: calc(100vh - 50px);
+	color: #FFF;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-content {
+	height: 50vh;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-content-container {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 70%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-content-predicton-desc {
+	padding-top: 6%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 36px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-button {
+	margin-top: 30px;
+	width: 150px;
+	color: #FFF;
+	background-color: #151515;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	font-size: 18px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-button a {
+	color: #FFF;
+	text-decoration: none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.featured-button h1 {
+	padding: 10px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.hr {
+	background-color: #757575;
+	padding: 5px 0;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 10px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-content {
+	width: 100%;
+	max-width: 100%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-container {
+	padding-top: 20px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-wrapper {
+	position: relative;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item {
+	padding-top: 30px;
+	position: relative;
+	width: 300px;
+	margin: 0 14px 50px 14px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item:hover .movie-list-item-img {
+	transform: scale(1.1);
+	opacity: 0.1;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item:hover .movie-list-item-linear,
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+	opacity: 1;
+	transition: all 1s ease;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-button:hover {
+	background-color: #7fff00;
+	color: #151515;
+	font-weight: 900;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-img{
+	border-radius: 5px;
+	transition: all 1s ease-in-out;
+	width: 300px;
+	height: 170px;
+	object-fit: cover;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-linear {
+	border-radius: 5px;
+	border: none;
+	background-color: #FFF;
+	height: 72px;
+	padding: 0 2px;
+	position: absolute;
+	top: 19%;
+	left: 14%;
+	opacity: 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-title {
+	padding: 0 10px;
+	font-size: 18px;
+	position: absolute;
+	top: 20%;
+	left: 16%;
+	opacity: 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-desc {
+	padding: 10px;
+	font-size: 10px;
+	position: absolute;
+	top: 40%;
+	left: 16%;
+	width: 230px;
+	opacity: 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-item-button {
+	border: none;
+	padding: 10px;
+	background-color: #FFF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	color: #151515;
+	border-radius: 10px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10%;
+	left: 19%;
+	opacity: 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-arrow {
+	width: 70px;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	opacity: 0.5;
+	cursor: pointer;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.movie-list-arrow img {
+	width: 100%;
+	transform: rotate(270deg);
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.footer {
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	display: flex;
+	color: #757575;
+	background-color: #000;
+	width: 100%;
+	justify-content: center;
+	padding: 2% 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.footer h1 {
+	padding: 2% 0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.footer-container {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	background-color: #000;
+	width: 100%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.about {
+	display: flex;
+	flex-direction: column;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.help {
+	display: flex;
+	flex-direction: column;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.account {
+	display: flex;
+	flex-direction: column;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.media {
+	display: flex;
+	flex-direction: column;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.h1 {
+	cursor: pointer;
+	margin: 0 60px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 1352px) {
+
+	.movie-list-title {
+		font-size: 32px;
+	}
+
+	.movie-list-item {
+		max-width: 300px;
+		height: 180px;
+	}
+
+	.movie-list-item-img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.movie-list-title {
+		padding-left: 20px;
+	}
+
+	.content-container, .navbar {
+		width: 1352px;
+	}
+
+	.navbar-container {
+	}
+
+	.movie-list-content {
+		width: 1352px;
+		background-color: #151515;
+	}
+
+	.movie-list-container {
+		width: 1352px;
+	}
+
+	.footer {
+			background: #000000;
+			min-width: 1352px;
+	}
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 768px) {
+
+	.movie-list-item-img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.content-container, .navbar {
+		width: 950px;
+		max-width: 950px;
+		max-height: 100%;
+	}
+
+	.movie-list-content {
+		width: 950px;
+		background-color: #151515;
+		max-width: 100%;
+	}
+
+	.movie-list-container {
+		justify-content: center;
+		width: 950px;
+		max-width: 100%;
+	}
+
+	.footer {
+		background: #000000;
+		width: 950px;
+		min-width: 950px;
+	}
+
+
+	.movie-list {
+		justify-content: center;
+		width: 900px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.movie-list-arrow {
+		display: none;
+	}
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 375px) {
+
+	.movie-list-item {
+		width: 500px;
+		height: 300px;
+		max-width: 100%;
+	}
+
+	.movie-list-item-img {
+		width: 500px;
+		height: 100%;
+	}
+
+	.movie-list-item-linear {
+		border-radius: 5px;
+		width: 5px;
+		height: 135px;
+	}
+
+	.movie-list-item-button {
+		font-size: 20px;
+	}
+
+	.movie-list-item-title {
+		font-size: 30px;
+	}
+
+	.movie-list-item-desc {
+		font-size: 15px;
+	}
+
+	.content-container, .navbar {
+		width: 950px;
+		max-width: 950px;
+		max-height: 100%;
+	}
+
+	.movie-list-content {
+		width: 950px;
+		background-color: #151515;
+		max-width: 100%;
+	}
+
+	.movie-list-container {
+		justify-content: center;
+		width: 950px;
+		max-width: 100%;
+	}
+
+	.footer {
+		background: #000000;
+		width: 950px;
+		min-width: 950px;
+	}
+
+	.none-item {
+		display: none;
+	}
+
+	.movie-list-arrow {
+		display: block;
+		padding: 8% 15% 0 0;
+	}
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
