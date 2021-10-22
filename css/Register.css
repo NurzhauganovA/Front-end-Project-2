@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html{
+	color:#000;
+	background:#FFF;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3,
+h4, h5, h6, pre, code, form, fieldset, legend, input,
+textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+fieldset, img {
+	border:0;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+ol, ul {
+	list-style:none;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+caption, th {
+	text-align:left;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+h1, h2, h3, h4, h5, h6 {
+
+	font-size:100%;
+	font-weight:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+q:before, q:after {
+	content:'';
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+abbr, acronym {
+	border:0;
+	font-variant:normal;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+sup {
+	vertical-align:text-top;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+sub {
+	vertical-align:text-bottom;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+input, textarea, select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+legend {
+	color:#000;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    max-height: 80px;
+    padding: 15px 0;
+    align-items: center;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+body, span, h1 {
+    font-weight: normal;
+}
+
+.header a {
+    color: #FFF;
+    text-decoration: none;
+    cursor: default;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.logo-header {
+    align-items: center;
+    padding-left: 7%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.logo-header h2 {
+    width: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    cursor: pointer;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.content {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background-image: url('/Project-2/img/poster.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.foreword-background {
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.576);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    align-items: center;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-container {
+    width: 30%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.837);
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-container-title {
+    align-items: center;
+    padding: 20px 40px;
+    color: #FFF;
+    z-index: 1;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.accept-profile {
+    display: block;
+    margin-top: 10%;
+    color: rgb(68, 232, 35);
+    font-size: 30px;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.profile-container-sign-in {
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 60%;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    font-size: 20px;
+    padding: 3% 0;
+    background-color: red;
+    color: #FFF;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 1400px) {
+
+    .content {
+        width: 1400px;
+    }
+
+    .logo-header h2 {
+        font-size: 36px;
+    }
+
+    .profile-container {
+        margin-top: 6%;
+        width: 33%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 1200px) {
+
+    .profile-container {
+        width: 30%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.837);
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+    
+    .profile-container-title {
+        align-items: center;
+        padding: 20px 40px;
+        color: #FFF;
+        z-index: 1;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    
+    .profile-container-login {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 15px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+    
+    .profile-container-password {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 15px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+
+    .profile-container-sign-out {
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10%;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        font-size: 18px;
+        padding: 3% 0;
+        background-color: red;
+        color: #FFF;
+    }
+
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 1100px) {
+
+    .content {
+        width: 1100px;
+        height: 100vh;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .logo-header h2 {
+        font-size: 33px;
+    }
+
+    .profile-container {
+        margin-top: 6%;
+        width: 37%;
+        height: 85%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 980px) {
+
+    .content {
+        width: 980px;
+        min-width: 980px;
+        min-height: 548px;
+    }
+
+    .logo-header h2 {
+        font-size: 24px;
+    }
+
+    .profile-container {
+        width: 380px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.837);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profile-container-title {
+        align-items: center;
+        padding: 20px 40px;
+        color: #FFF;
+        z-index: 1;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    
+    .profile-container-login {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 13px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+    
+    .profile-container-password {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 13px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+    
+    .profile-container-login:hover {
+        line-height-step: calc(1);
+    }
+    
+    .profile-container-sign-in {
+        cursor: pointer;
+        margin-top: 10%;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        font-size: 15px;
+        padding: 3% 0;
+        background-color: red;
+        color: #FFF;
+    }
+    
+    .profile-container-remember {
+        align-items: center;
+        display: flex;
+    }
+    
+    .profile-container-remember-input {
+        margin-top: 20px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    
+    .profile-container-remember-text {
+        font-size: 14px;
+        margin: 20px 0 0 10px;
+    }
+    
+    .profile-container-forgot-password {
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .profile-container-forgot-password:hover {
+        text-decoration: underline;
+    }
+    
+    .profile-container-sign-out {
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10%;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        font-size: 15px;
+        padding: 3% 0;
+        background-color: #FFF;
+        color: red;
+    }
+
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media only screen and (max-width: 768px) {
+
+    .content {
+        width: 768px;
+        height: 548px;
+    }
+
+    .profile-container {
+        width: 300px;
+        height: 350px;
+        background-color: rgba(0, 0, 0, 0.837);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profile-container-title {
+        align-items: center;
+        padding: 20px 40px;
+        color: #FFF;
+        z-index: 1;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+    
+    .profile-container-login {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 12px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+    
+    .profile-container-password {
+        margin-top: 5%;
+        border-radius: 5px;
+        color: #151515;
+        padding: 3% 0;
+        font-size: 12px;
+        padding-left: 5%;
+        border: none;
+        width: 90%;
+    }
+    
+    .profile-container-login:hover {
+        line-height-step: calc(1);
+    }
+    
+    .profile-container-sign-in {
+        cursor: pointer;
+        margin-top: 10%;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        font-size: 12px;
+        padding: 3% 0;
+        background-color: red;
+        color: #FFF;
+    }
+    
+    .profile-container-remember {
+        align-items: center;
+        display: flex;
+    }
+    
+    .profile-container-remember-input {
+        margin-top: 20px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    
+    .profile-container-remember-text {
+        font-size: 14px;
+        margin: 20px 0 0 10px;
+    }
+    
+    .profile-container-forgot-password {
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .profile-container-forgot-password:hover {
+        text-decoration: underline;
+    }
+    
+    .profile-container-sign-in {
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10%;
+        border-radius: 5px;
+        border: none;
+        width: 95%;
+        font-size: 12px;
+        padding: 3% 0;
+        background-color: #FFF;
+        color: red;
+    }
+
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
